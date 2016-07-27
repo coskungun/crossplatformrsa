@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34061EF4E8F8E8D332DACF50 /* libPods-RSACrossPlatformTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D610524D347BA5399DBE61F /* libPods-RSACrossPlatformTests.a */; };
+		8994EDB41D48D4A7006F093A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8994EDB31D48D4A7006F093A /* main.m */; };
+		8994EDB71D48D4A7006F093A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8994EDB61D48D4A7006F093A /* AppDelegate.m */; };
+		8994EDBA1D48D4A7006F093A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8994EDB91D48D4A7006F093A /* ViewController.m */; };
+		8994EDBD1D48D4A7006F093A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8994EDBB1D48D4A7006F093A /* Main.storyboard */; };
+		8994EDBF1D48D4A7006F093A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8994EDBE1D48D4A7006F093A /* Assets.xcassets */; };
+		8994EDC21D48D4A7006F093A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8994EDC01D48D4A7006F093A /* LaunchScreen.storyboard */; };
+		8994EDCD1D48D4A8006F093A /* RSACrossPlatformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8994EDCC1D48D4A8006F093A /* RSACrossPlatformTests.m */; };
+		8994EDD81D48D4A8006F093A /* RSACrossPlatformUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8994EDD71D48D4A8006F093A /* RSACrossPlatformUITests.m */; };
+		8994EDE71D48D615006F093A /* RSAEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8994EDE61D48D615006F093A /* RSAEncryptHelper.m */; };
+		8994EDEC1D48D6F8006F093A /* NSData+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8994EDE91D48D6F8006F093A /* NSData+Conversion.m */; };
+		8994EDED1D48D6F8006F093A /* NSData+HexDump.m in Sources */ = {isa = PBXBuildFile; fileRef = 8994EDEB1D48D6F8006F093A /* NSData+HexDump.m */; };
+		8994EDF01D48D70C006F093A /* NSString+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8994EDEF1D48D70C006F093A /* NSString+Hex.m */; };
+		B121FEE933E29B91EA23C6D7 /* libPods-RSACrossPlatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 080EE2A7F10716B4C17DFA6F /* libPods-RSACrossPlatform.a */; };
+		E715D2F5C1F1F537AFB8296F /* libPods-RSACrossPlatformUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CCE685913402D6E9DDB7A8 /* libPods-RSACrossPlatformUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8994EDC91D48D4A8006F093A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8994EDA71D48D4A7006F093A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8994EDAE1D48D4A7006F093A;
+			remoteInfo = RSACrossPlatform;
+		};
+		8994EDD41D48D4A8006F093A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8994EDA71D48D4A7006F093A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8994EDAE1D48D4A7006F093A;
+			remoteInfo = RSACrossPlatform;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		080EE2A7F10716B4C17DFA6F /* libPods-RSACrossPlatform.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSACrossPlatform.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		251B129435D23128DF498E56 /* Pods-RSACrossPlatformTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSACrossPlatformTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSACrossPlatformTests/Pods-RSACrossPlatformTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B23FCC237DA0E8A5D2AA6EB /* Pods-RSACrossPlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSACrossPlatform.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSACrossPlatform/Pods-RSACrossPlatform.debug.xcconfig"; sourceTree = "<group>"; };
+		59FA87E5E663988570A9BAAE /* Pods-RSACrossPlatformTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSACrossPlatformTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSACrossPlatformTests/Pods-RSACrossPlatformTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D610524D347BA5399DBE61F /* libPods-RSACrossPlatformTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSACrossPlatformTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8994EDAF1D48D4A7006F093A /* RSACrossPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSACrossPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8994EDB31D48D4A7006F093A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8994EDB51D48D4A7006F093A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8994EDB61D48D4A7006F093A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8994EDB81D48D4A7006F093A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8994EDB91D48D4A7006F093A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8994EDBC1D48D4A7006F093A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8994EDBE1D48D4A7006F093A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8994EDC11D48D4A7006F093A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8994EDC31D48D4A7006F093A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8994EDC81D48D4A8006F093A /* RSACrossPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSACrossPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8994EDCC1D48D4A8006F093A /* RSACrossPlatformTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSACrossPlatformTests.m; sourceTree = "<group>"; };
+		8994EDCE1D48D4A8006F093A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8994EDD31D48D4A8006F093A /* RSACrossPlatformUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSACrossPlatformUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8994EDD71D48D4A8006F093A /* RSACrossPlatformUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSACrossPlatformUITests.m; sourceTree = "<group>"; };
+		8994EDD91D48D4A8006F093A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8994EDE51D48D615006F093A /* RSAEncryptHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptHelper.h; sourceTree = "<group>"; };
+		8994EDE61D48D615006F093A /* RSAEncryptHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptHelper.m; sourceTree = "<group>"; };
+		8994EDE81D48D6F8006F093A /* NSData+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Conversion.h"; sourceTree = "<group>"; };
+		8994EDE91D48D6F8006F093A /* NSData+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Conversion.m"; sourceTree = "<group>"; };
+		8994EDEA1D48D6F8006F093A /* NSData+HexDump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HexDump.h"; sourceTree = "<group>"; };
+		8994EDEB1D48D6F8006F093A /* NSData+HexDump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HexDump.m"; sourceTree = "<group>"; };
+		8994EDEE1D48D70C006F093A /* NSString+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hex.h"; sourceTree = "<group>"; };
+		8994EDEF1D48D70C006F093A /* NSString+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hex.m"; sourceTree = "<group>"; };
+		95545A5DC9FFEBE4ED7C86E2 /* Pods-RSACrossPlatformUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSACrossPlatformUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSACrossPlatformUITests/Pods-RSACrossPlatformUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0D3531686E31B5111785E19 /* Pods-RSACrossPlatformUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSACrossPlatformUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSACrossPlatformUITests/Pods-RSACrossPlatformUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F1985B3D8DE5E2D8A8B3F2C0 /* Pods-RSACrossPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSACrossPlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSACrossPlatform/Pods-RSACrossPlatform.release.xcconfig"; sourceTree = "<group>"; };
+		F5CCE685913402D6E9DDB7A8 /* libPods-RSACrossPlatformUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSACrossPlatformUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8994EDAC1D48D4A7006F093A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B121FEE933E29B91EA23C6D7 /* libPods-RSACrossPlatform.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8994EDC51D48D4A8006F093A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34061EF4E8F8E8D332DACF50 /* libPods-RSACrossPlatformTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8994EDD01D48D4A8006F093A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E715D2F5C1F1F537AFB8296F /* libPods-RSACrossPlatformUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F7781026B56A1B56AF454CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				080EE2A7F10716B4C17DFA6F /* libPods-RSACrossPlatform.a */,
+				5D610524D347BA5399DBE61F /* libPods-RSACrossPlatformTests.a */,
+				F5CCE685913402D6E9DDB7A8 /* libPods-RSACrossPlatformUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BA60414EA14AF705E2B6C0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B23FCC237DA0E8A5D2AA6EB /* Pods-RSACrossPlatform.debug.xcconfig */,
+				F1985B3D8DE5E2D8A8B3F2C0 /* Pods-RSACrossPlatform.release.xcconfig */,
+				251B129435D23128DF498E56 /* Pods-RSACrossPlatformTests.debug.xcconfig */,
+				59FA87E5E663988570A9BAAE /* Pods-RSACrossPlatformTests.release.xcconfig */,
+				95545A5DC9FFEBE4ED7C86E2 /* Pods-RSACrossPlatformUITests.debug.xcconfig */,
+				C0D3531686E31B5111785E19 /* Pods-RSACrossPlatformUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8994EDA61D48D4A7006F093A = {
+			isa = PBXGroup;
+			children = (
+				8994EDB11D48D4A7006F093A /* RSACrossPlatform */,
+				8994EDCB1D48D4A8006F093A /* RSACrossPlatformTests */,
+				8994EDD61D48D4A8006F093A /* RSACrossPlatformUITests */,
+				8994EDB01D48D4A7006F093A /* Products */,
+				7BA60414EA14AF705E2B6C0F /* Pods */,
+				5F7781026B56A1B56AF454CC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8994EDB01D48D4A7006F093A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8994EDAF1D48D4A7006F093A /* RSACrossPlatform.app */,
+				8994EDC81D48D4A8006F093A /* RSACrossPlatformTests.xctest */,
+				8994EDD31D48D4A8006F093A /* RSACrossPlatformUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8994EDB11D48D4A7006F093A /* RSACrossPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				8994EDF11D48D718006F093A /* RSAHelper */,
+				8994EDB51D48D4A7006F093A /* AppDelegate.h */,
+				8994EDB61D48D4A7006F093A /* AppDelegate.m */,
+				8994EDB81D48D4A7006F093A /* ViewController.h */,
+				8994EDB91D48D4A7006F093A /* ViewController.m */,
+				8994EDBB1D48D4A7006F093A /* Main.storyboard */,
+				8994EDBE1D48D4A7006F093A /* Assets.xcassets */,
+				8994EDC01D48D4A7006F093A /* LaunchScreen.storyboard */,
+				8994EDC31D48D4A7006F093A /* Info.plist */,
+				8994EDB21D48D4A7006F093A /* Supporting Files */,
+			);
+			path = RSACrossPlatform;
+			sourceTree = "<group>";
+		};
+		8994EDB21D48D4A7006F093A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8994EDB31D48D4A7006F093A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8994EDCB1D48D4A8006F093A /* RSACrossPlatformTests */ = {
+			isa = PBXGroup;
+			children = (
+				8994EDCC1D48D4A8006F093A /* RSACrossPlatformTests.m */,
+				8994EDCE1D48D4A8006F093A /* Info.plist */,
+			);
+			path = RSACrossPlatformTests;
+			sourceTree = "<group>";
+		};
+		8994EDD61D48D4A8006F093A /* RSACrossPlatformUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8994EDD71D48D4A8006F093A /* RSACrossPlatformUITests.m */,
+				8994EDD91D48D4A8006F093A /* Info.plist */,
+			);
+			path = RSACrossPlatformUITests;
+			sourceTree = "<group>";
+		};
+		8994EDF11D48D718006F093A /* RSAHelper */ = {
+			isa = PBXGroup;
+			children = (
+				8994EDE51D48D615006F093A /* RSAEncryptHelper.h */,
+				8994EDE61D48D615006F093A /* RSAEncryptHelper.m */,
+				8994EDEE1D48D70C006F093A /* NSString+Hex.h */,
+				8994EDEF1D48D70C006F093A /* NSString+Hex.m */,
+				8994EDE81D48D6F8006F093A /* NSData+Conversion.h */,
+				8994EDE91D48D6F8006F093A /* NSData+Conversion.m */,
+				8994EDEA1D48D6F8006F093A /* NSData+HexDump.h */,
+				8994EDEB1D48D6F8006F093A /* NSData+HexDump.m */,
+			);
+			name = RSAHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8994EDAE1D48D4A7006F093A /* RSACrossPlatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8994EDDC1D48D4A8006F093A /* Build configuration list for PBXNativeTarget "RSACrossPlatform" */;
+			buildPhases = (
+				BC55993F0198E605CB8554FB /* [CP] Check Pods Manifest.lock */,
+				8994EDAB1D48D4A7006F093A /* Sources */,
+				8994EDAC1D48D4A7006F093A /* Frameworks */,
+				8994EDAD1D48D4A7006F093A /* Resources */,
+				BDE78542152176C79165360C /* [CP] Embed Pods Frameworks */,
+				B7B6918A10530CA35F1B99D7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSACrossPlatform;
+			productName = RSACrossPlatform;
+			productReference = 8994EDAF1D48D4A7006F093A /* RSACrossPlatform.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8994EDC71D48D4A8006F093A /* RSACrossPlatformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8994EDDF1D48D4A8006F093A /* Build configuration list for PBXNativeTarget "RSACrossPlatformTests" */;
+			buildPhases = (
+				452AE60539B8B5BACD647286 /* [CP] Check Pods Manifest.lock */,
+				8994EDC41D48D4A8006F093A /* Sources */,
+				8994EDC51D48D4A8006F093A /* Frameworks */,
+				8994EDC61D48D4A8006F093A /* Resources */,
+				3448047D37C49DE00330B00F /* [CP] Embed Pods Frameworks */,
+				D8CA3EFDC7FED612817105E7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8994EDCA1D48D4A8006F093A /* PBXTargetDependency */,
+			);
+			name = RSACrossPlatformTests;
+			productName = RSACrossPlatformTests;
+			productReference = 8994EDC81D48D4A8006F093A /* RSACrossPlatformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8994EDD21D48D4A8006F093A /* RSACrossPlatformUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8994EDE21D48D4A8006F093A /* Build configuration list for PBXNativeTarget "RSACrossPlatformUITests" */;
+			buildPhases = (
+				8540D1AB74AE6983104C94E1 /* [CP] Check Pods Manifest.lock */,
+				8994EDCF1D48D4A8006F093A /* Sources */,
+				8994EDD01D48D4A8006F093A /* Frameworks */,
+				8994EDD11D48D4A8006F093A /* Resources */,
+				031A94D30FF5CF63768A7962 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8994EDD51D48D4A8006F093A /* PBXTargetDependency */,
+			);
+			name = RSACrossPlatformUITests;
+			productName = RSACrossPlatformUITests;
+			productReference = 8994EDD31D48D4A8006F093A /* RSACrossPlatformUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8994EDA71D48D4A7006F093A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Coşkun Güngör";
+				TargetAttributes = {
+					8994EDAE1D48D4A7006F093A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					8994EDC71D48D4A8006F093A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 8994EDAE1D48D4A7006F093A;
+					};
+					8994EDD21D48D4A8006F093A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 8994EDAE1D48D4A7006F093A;
+					};
+				};
+			};
+			buildConfigurationList = 8994EDAA1D48D4A7006F093A /* Build configuration list for PBXProject "RSACrossPlatform" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8994EDA61D48D4A7006F093A;
+			productRefGroup = 8994EDB01D48D4A7006F093A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8994EDAE1D48D4A7006F093A /* RSACrossPlatform */,
+				8994EDC71D48D4A8006F093A /* RSACrossPlatformTests */,
+				8994EDD21D48D4A8006F093A /* RSACrossPlatformUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8994EDAD1D48D4A7006F093A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8994EDC21D48D4A7006F093A /* LaunchScreen.storyboard in Resources */,
+				8994EDBF1D48D4A7006F093A /* Assets.xcassets in Resources */,
+				8994EDBD1D48D4A7006F093A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8994EDC61D48D4A8006F093A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8994EDD11D48D4A8006F093A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		031A94D30FF5CF63768A7962 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSACrossPlatformUITests/Pods-RSACrossPlatformUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3448047D37C49DE00330B00F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSACrossPlatformTests/Pods-RSACrossPlatformTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		452AE60539B8B5BACD647286 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8540D1AB74AE6983104C94E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7B6918A10530CA35F1B99D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSACrossPlatform/Pods-RSACrossPlatform-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC55993F0198E605CB8554FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDE78542152176C79165360C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSACrossPlatform/Pods-RSACrossPlatform-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8CA3EFDC7FED612817105E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSACrossPlatformTests/Pods-RSACrossPlatformTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8994EDAB1D48D4A7006F093A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8994EDEC1D48D6F8006F093A /* NSData+Conversion.m in Sources */,
+				8994EDE71D48D615006F093A /* RSAEncryptHelper.m in Sources */,
+				8994EDBA1D48D4A7006F093A /* ViewController.m in Sources */,
+				8994EDB71D48D4A7006F093A /* AppDelegate.m in Sources */,
+				8994EDF01D48D70C006F093A /* NSString+Hex.m in Sources */,
+				8994EDED1D48D6F8006F093A /* NSData+HexDump.m in Sources */,
+				8994EDB41D48D4A7006F093A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8994EDC41D48D4A8006F093A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8994EDCD1D48D4A8006F093A /* RSACrossPlatformTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8994EDCF1D48D4A8006F093A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8994EDD81D48D4A8006F093A /* RSACrossPlatformUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8994EDCA1D48D4A8006F093A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8994EDAE1D48D4A7006F093A /* RSACrossPlatform */;
+			targetProxy = 8994EDC91D48D4A8006F093A /* PBXContainerItemProxy */;
+		};
+		8994EDD51D48D4A8006F093A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8994EDAE1D48D4A7006F093A /* RSACrossPlatform */;
+			targetProxy = 8994EDD41D48D4A8006F093A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8994EDBB1D48D4A7006F093A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8994EDBC1D48D4A7006F093A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8994EDC01D48D4A7006F093A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8994EDC11D48D4A7006F093A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8994EDDA1D48D4A8006F093A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8994EDDB1D48D4A8006F093A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8994EDDD1D48D4A8006F093A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B23FCC237DA0E8A5D2AA6EB /* Pods-RSACrossPlatform.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RSACrossPlatform/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coskungungor.RSACrossPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8994EDDE1D48D4A8006F093A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1985B3D8DE5E2D8A8B3F2C0 /* Pods-RSACrossPlatform.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RSACrossPlatform/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coskungungor.RSACrossPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8994EDE01D48D4A8006F093A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251B129435D23128DF498E56 /* Pods-RSACrossPlatformTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RSACrossPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coskungungor.RSACrossPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSACrossPlatform.app/RSACrossPlatform";
+			};
+			name = Debug;
+		};
+		8994EDE11D48D4A8006F093A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59FA87E5E663988570A9BAAE /* Pods-RSACrossPlatformTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RSACrossPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coskungungor.RSACrossPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSACrossPlatform.app/RSACrossPlatform";
+			};
+			name = Release;
+		};
+		8994EDE31D48D4A8006F093A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95545A5DC9FFEBE4ED7C86E2 /* Pods-RSACrossPlatformUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = RSACrossPlatformUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coskungungor.RSACrossPlatformUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RSACrossPlatform;
+			};
+			name = Debug;
+		};
+		8994EDE41D48D4A8006F093A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D3531686E31B5111785E19 /* Pods-RSACrossPlatformUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = RSACrossPlatformUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coskungungor.RSACrossPlatformUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RSACrossPlatform;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8994EDAA1D48D4A7006F093A /* Build configuration list for PBXProject "RSACrossPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8994EDDA1D48D4A8006F093A /* Debug */,
+				8994EDDB1D48D4A8006F093A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8994EDDC1D48D4A8006F093A /* Build configuration list for PBXNativeTarget "RSACrossPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8994EDDD1D48D4A8006F093A /* Debug */,
+				8994EDDE1D48D4A8006F093A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8994EDDF1D48D4A8006F093A /* Build configuration list for PBXNativeTarget "RSACrossPlatformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8994EDE01D48D4A8006F093A /* Debug */,
+				8994EDE11D48D4A8006F093A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8994EDE21D48D4A8006F093A /* Build configuration list for PBXNativeTarget "RSACrossPlatformUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8994EDE31D48D4A8006F093A /* Debug */,
+				8994EDE41D48D4A8006F093A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8994EDA71D48D4A7006F093A /* Project object */;
+}

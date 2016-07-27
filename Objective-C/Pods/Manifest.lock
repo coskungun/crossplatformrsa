@@ -1,0 +1,35 @@
+PODS:
+  - MIHCrypto (0.4.1):
+    - MIHCrypto/AES (= 0.4.1)
+    - MIHCrypto/Core (= 0.4.1)
+    - MIHCrypto/DES (= 0.4.1)
+    - MIHCrypto/Mathematics (= 0.4.1)
+    - MIHCrypto/MD5 (= 0.4.1)
+    - MIHCrypto/RSA (= 0.4.1)
+    - MIHCrypto/SHA (= 0.4.1)
+  - MIHCrypto/AES (0.4.1):
+    - MIHCrypto/Core
+  - MIHCrypto/Core (0.4.1):
+    - OpenSSL-Universal (~> 1.0.1.18)
+  - MIHCrypto/DES (0.4.1):
+    - MIHCrypto/Core
+  - MIHCrypto/Mathematics (0.4.1):
+    - MIHCrypto/Core
+  - MIHCrypto/MD5 (0.4.1):
+    - MIHCrypto/Core
+  - MIHCrypto/RSA (0.4.1):
+    - MIHCrypto/Core
+  - MIHCrypto/SHA (0.4.1):
+    - MIHCrypto/Core
+  - OpenSSL-Universal (1.0.1.19)
+
+DEPENDENCIES:
+  - MIHCrypto (~> 0.4.0)
+
+SPEC CHECKSUMS:
+  MIHCrypto: 9c83cf35a3c218928847df8faf1ba080975a0bf2
+  OpenSSL-Universal: '07489b0316f0f4f53c928e402e2ecbbedf96d93b'
+
+PODFILE CHECKSUM: 6a1fc4628df5c74291db2ce72f8718456b677e71
+
+COCOAPODS: 1.0.1
